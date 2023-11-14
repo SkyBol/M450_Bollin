@@ -3,7 +3,8 @@
 ## 1
 ### Welche Formen von Tests kennen Sie aus der Informatik?
 White/BlackBox Tests
-Unit-Tests, Component-Tests, System-Tests, Smoke-Tests, E2E-Tests
+Unit-Tests, Component-Tests, System-Tests, E2E-Tests
+Smoke-Tests
 
 ### Erläutern Sie mind. drei Beispiele, die Sie aus der Praxis kennen
 e2e - Email-Prozess, welcher an einer Liste von Teilnehmer Einladungen ausschickt.

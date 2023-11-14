@@ -14,7 +14,7 @@ public class Price {
 
         if (extras >= 3)
             addon_discount = 10;
-        else if (extras >= 5)
+        if (extras >= 5)
             addon_discount = 15;
 
 
