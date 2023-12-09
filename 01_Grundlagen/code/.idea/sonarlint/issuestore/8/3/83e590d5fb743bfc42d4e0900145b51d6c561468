@@ -1,0 +1,8 @@
+
+
+java:S1192	"rDefine a constant instead of duplicating this literal "-------------------------------------------------" 4 times.(§Í»8ÑôÃé¼1
+g
+java:S1192"JDefine a constant instead of duplicating this literal "Passing: " 3 times.(¬š²â8ÒôÃé¼1
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä¢‰Ş
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ùù¼ûÿÿÿÿ
+h	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÅ¤üÿÿÿÿ
