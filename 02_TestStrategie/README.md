@@ -33,3 +33,19 @@ Ausgesuchte Website: https://www.avis.ch/
 | 6  | Fahrzeugrückgabe nach gemieteter Zeit | Bestätigung der Rückgabe, Abrechnung des Mietbetrags | Fehlende Rückgabebestätigung, keine Abrechnung | Fehler | Technische Probleme mit der Rückgabelogik |
 
 ## 3
+1. Identifzieren Sie mögliche Black-Box Testfälle, welche Sie als Benutzer testen können.
+- Konto Erstellen mit Special Characters
+- Konto mit Special Characters anzeigen lassen
+- Ungültige Kontonummer abfragen
+- Geld auf ein Konto abheben / hinterlegen
+- Currency Converter nach der aktuellen Rate abfragen
+
+2. Welche Methoden im Code könnten für White-Box Testfälle verwendet werden?
+- deposit/withdraw
+- convertCurrency von EUR-Konto zu USD Konto
+
+3. Was würden Sie am Code generell verbessern, welche Best Practices fallen Ihnen ein
+do {} while(true)
+Input Sanitation
+-> Eigene Scanner/Input Klasse
+AccountExeption auslagern
