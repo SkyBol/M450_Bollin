@@ -28,6 +28,7 @@ Ausgesuchte Website: https://www.avis.ch/
 | 1  | Programm startet korrekt | Nach dem Aufruf des Programms auf der Konsole öffnet sich ein Fenster.| Programm stürzt ab mit Fehler X00234 | Fehler |Zugriff auf DB-Server evtl. nicht möglich |
 | 2  | Anmeldung mit gültigen Anmeldeinformationen | Erfolgreicher Login | Erfolgreicher Login | Erfolg | - |
 | 3  | Anmeldung mit ungültigen Anmeldeinformationen | Fehlermeldung "Ungültige Anmeldeinformationen" | Fehlermeldung "Falsches Passwort" | Fehler | Authentifizierungsproblem |
+| 4  | Freie Fahrzeuge für Zeitraum suchen | Liste von Fahrzeugen für den Ausgewählten Zeitraum | Liste von Fahrzeugen für den Ausgewählten Zeitraum | Erfolg | - |
 | 4  | Fahrzeugbuchung für ausgewählten Zeitraum | Erfolgreiche Buchung und Reservierung | Buchung fehlgeschlagen, Fahrzeug nicht verfügbar | Fehler | Fahrzeug bereits gebucht oder technisches Problem |
 | 5  | Zahlungsvorgang für gebuchtes Fahrzeug | Erfolgreiche Abbuchung des Betrags | Zahlungsfehler, Transaktion abgebrochen | Fehler | Problem mit dem Zahlungsgateway oder Verbindung |
 | 6  | Fahrzeugrückgabe nach gemieteter Zeit | Bestätigung der Rückgabe, Abrechnung des Mietbetrags | Fehlende Rückgabebestätigung, keine Abrechnung | Fehler | Technische Probleme mit der Rückgabelogik |
@@ -42,10 +43,12 @@ Ausgesuchte Website: https://www.avis.ch/
 
 2. Welche Methoden im Code könnten für White-Box Testfälle verwendet werden?
 - deposit/withdraw
-- convertCurrency von EUR-Konto zu USD Konto
+- convertCurrency von EUR-Konto zu USD Konto -> Wird Failen, es gibt keinen Case dafür
+- Konten abfragen, gültige sowie ungültige Kontonummer
 
 3. Was würden Sie am Code generell verbessern, welche Best Practices fallen Ihnen ein
 do {} while(true)
+-> Nicht schlimm, aber man sieht es nicht gerne
 Input Sanitation
 -> Eigene Scanner/Input Klasse
 AccountExeption auslagern

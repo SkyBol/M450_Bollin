@@ -30,8 +30,7 @@ public abstract class Account {
 	 *
 	 * @param id die Kontonummer
 	 */
-	public Account(String id)
-	{
+	public Account(String id) {
 		this.id = id;
 		this.balance = 0;
 		this.bookings = new ArrayList<Booking>();
@@ -42,8 +41,7 @@ public abstract class Account {
 	 * @return  die Kontonummer
 	 * @uml.property  name="id"
 	 */
-	public String getId()
-	{
+	public String getId() {
 		return id;
 	}
 
@@ -52,13 +50,11 @@ public abstract class Account {
 	 * @return  Saldo
 	 * @uml.property  name="balance"
 	 */
-	public long getBalance()
-	{
+	public long getBalance() {
 		return balance;
 	}
 
-	public boolean canTransact(int date)
-	{
+	public boolean canTransact(int date) {
 		if (bookings.isEmpty())
 			return true;
 
@@ -77,8 +73,7 @@ public abstract class Account {
 	 * Einzahlung erfolgreich war, andernfalls (z.B.
 	 * bei negativem Betrag) <code>false</code>.
 	 */
-	public boolean deposit(int date, long amount)
-	{
+	public boolean deposit(int date, long amount) {
 		if (amount < 0)
 			return false;
 
@@ -100,8 +95,7 @@ public abstract class Account {
 	 * Abhebung erfolgreich war, andernfalls (z.B.
 	 * bei negativem Betrag) <code>false</code>.
 	 */
-	public boolean withdraw(int date, long amount)
-	{
+	public boolean withdraw(int date, long amount) {
 		if (amount < 0)
 			return false;
 
@@ -117,8 +111,7 @@ public abstract class Account {
 	/**
 	 * Druckt den Kontoauszug dieses Kontos.
 	 */
-	public void print()
-	{
+	public void print() {
 		System.out.println("Kontoauszug '" + id + "'");
 		System.out.println("Datum          Betrag      Saldo");
 
@@ -139,8 +132,7 @@ public abstract class Account {
 	 * @param year das Jahr
 	 * @param month der Monat
 	 */
-	public void print(int year, int month)
-	{
+	public void print(int year, int month) {
 		System.out.println("Kontoauszug '" + id + "' "
 			+ "Monat: " + month + "." + year);
 	    System.out.println("Datum          Betrag      Saldo");
@@ -150,8 +142,7 @@ public abstract class Account {
 		int endDate = startDate + 30;
 		long balance = 0;
 
-		for (int i = 0; i < bookings.size(); ++i)
-		{
+		for (int i = 0; i < bookings.size(); ++i) {
 			Booking b = (Booking) bookings.get(i);
 
 			if (b.getDate() >= endDate)

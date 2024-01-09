@@ -1,6 +1,7 @@
 package ch.schule.bank.junit5;
 
 import ch.schule.Account;
+import ch.schule.Booking;
 import ch.schule.SalaryAccount;
 import ch.schule.SavingsAccount;
 import org.junit.jupiter.api.*;
@@ -81,7 +82,8 @@ public class AccountTests {
     @Order(5)
     public void testCanTransact() {
         assertTrue(accounts.get("1").canTransact(now()));
-
+        assertFalse(accounts.get("1").withdraw(now() - 1000000, 1000));
+        assertFalse(accounts.get("1").deposit(now() - 1000000, 1000));
     }
 
     /**
@@ -100,6 +102,17 @@ public class AccountTests {
     @Order(7)
     public void testMonthlyPrint() {
         accounts.get("1").print(2023, 5);
+
+        Account SalaryAccount = new SalaryAccount("1", -10000);
+        accounts.put("1", SalaryAccount);
+        accounts.get("1").deposit(370, 100);
+        accounts.get("1").print(1971, 1);
     }
 
+    @Test
+    @Order(100)
+    public void gettersAndSetters() {
+        assertAll(() -> accounts.get("1").getBooking());
+        assertAll(() -> accounts.get("1").setBooking(null));
+    }
 }

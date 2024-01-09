@@ -29,8 +29,7 @@ public class SavingsAccount extends Account
 	 * bei negativem Betrag, oder nicht gen�gend
 	 * Saldo) <code>false</code>.
 	 */
-	public boolean withdraw(int date, long amount)
-	{
+	public boolean withdraw(int date, long amount) {
 		if (getBalance() < amount)
 			return false;
 

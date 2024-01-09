@@ -22,8 +22,7 @@ public class Bank
 	/**
 	 * Initialisiert eine neue Bank.
 	 */
-	public Bank()
-	{
+	public Bank() {
 		this.accounts = new TreeMap<String, Account>();
 		this.nextAccountId = 1000;
 	}
@@ -33,8 +32,7 @@ public class Bank
 	 *
 	 * @return die neue Kontonummer
 	 */
-	public String createSavingsAccount()
-	{
+	public String createSavingsAccount() {
 		String id = "S-" + nextAccountId;
 
 	    ++nextAccountId;
@@ -48,8 +46,7 @@ public class Bank
 	 *
 	 * @return die neue Kontonummer
 	 */
-	public String createPromoYouthSavingsAccount()
-	{       // 
+	public String createPromoYouthSavingsAccount() {
 		String id = "Y-" + nextAccountId;
 
 		++nextAccountId;
@@ -65,10 +62,8 @@ public class Bank
 	 * @param creditLimit Kreditlimite (negative Zahl)
 	 * @return String die neue Kontonummer
 	 */
-	public String createSalaryAccount(long creditLimit)
-	{
-		if (creditLimit > 0) // ung�ltiger Parameter?
-		{
+	public String createSalaryAccount(long creditLimit) {
+		if (creditLimit > 0) {
 			return null;
 		}
         String id = "P-" + nextAccountId;
@@ -77,15 +72,14 @@ public class Bank
 		accounts.put(id,new SalaryAccount(id, creditLimit));
 
 		return id;
-	
-        }
+	}
+
 	/**
 	 * Gibt den Kontostand der Bank zur�ck.
 	 *
 	 * @return long der Kontostand der Bank
 	 */
-	public long getBalance()
-	{
+	public long getBalance() {
 		long balance = 0;
 		Account[] aa = (Account[]) accounts.values().toArray(
 			  new Account[accounts.size()]);
@@ -110,8 +104,7 @@ public class Bank
 	 * @param id die Kontonummer
 	 * @return long der Kontostand des Kontos
 	 */
-	public long getBalance(String id)
-	{
+	public long getBalance(String id) {
 		Account a = (Account) accounts.get(id);
 
 	    if (a == null)
@@ -135,9 +128,7 @@ public class Bank
 	 * @param amount der einzuzahlende Betrag
 	 * @return boolean ob die Einzahlung erfolgreich war
 	 */
-	public boolean deposit(String id, int date,
-						   long amount)
-	{
+	public boolean deposit(String id, int date, long amount) {
 		// 1. Konto suchen
 		Account a = (Account) accounts.get(id);
 
@@ -163,9 +154,7 @@ public class Bank
 	 * @param amount der abzuhebende Betrag
 	 * @return boolean ob das Abheben erfolgreich war
 	 */
-	public boolean withdraw(String id, int date,
-							long amount)
-	{
+	public boolean withdraw(String id, int date, long amount) {
 		// 1. Konto suchen
 		Account a = (Account) accounts.get(id);
 
@@ -182,8 +171,7 @@ public class Bank
 	 *
 	 * @param id die Kontonummer des zu druckenden Kontos
 	 */
-	public void print(String id)
-	{
+	public void print(String id) {
 		// 1. Konto suchen
 		Account a = (Account) accounts.get(id);
 
@@ -201,8 +189,7 @@ public class Bank
 	 * @param year das Jahr
 	 * @param month der Monat
 	 */
-	public void print(String id, int year, int month)
-	{
+	public void print(String id, int year, int month) {
 		// 1. Konto suchen
 		Account a = (Account) accounts.get(id);
 
@@ -215,8 +202,7 @@ public class Bank
 	/**
 	 * Druckt die f�nf Konten mit dem h�chsten Saldo.
 	 */
-	public void printTop5()
-	{
+	public void printTop5() {
 		Account[] aa = (Account[]) accounts.values().toArray(
 			  new Account[accounts.size()]);
 
@@ -232,8 +218,7 @@ public class Bank
 	/**
 	 * Druckt die f�nf Konten mit dem h�chsten Saldo.
 	 */
-	public void printBottom5()
-	{
+	public void printBottom5() {
 		Account[] aa = (Account[]) accounts.values().toArray(
 			  new Account[accounts.size()]);
 

@@ -8,8 +8,7 @@ package ch.schule;
  * @author Roger H. J&ouml;rg
  * @version 1.0
  */
-public class PromoYouthSavingsAccount extends SavingsAccount
-{
+public class PromoYouthSavingsAccount extends SavingsAccount {
 	/**
 	 * Initializes a new instance of this account.
 	 *
@@ -31,8 +30,7 @@ public class PromoYouthSavingsAccount extends SavingsAccount
 	 * Einzahlung erfolgreich war, andernfalls (z.B.
 	 * bei negativem Betrag) <code>false</code>.
 	 */
-	public boolean deposit(int date, long amount)
-	{
+	public boolean deposit(int date, long amount) {
 	    long bonus = amount / 100;
 
 	    return super.deposit(date, amount + bonus);
