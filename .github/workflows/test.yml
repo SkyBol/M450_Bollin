@@ -24,7 +24,6 @@ jobs:
         run: mvn -B clean verify
 
       - name: Upload Surefire Reports
-        working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
         uses: actions/upload-artifact@v2
         with:
           name: surefire-reports
