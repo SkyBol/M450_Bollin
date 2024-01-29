@@ -69,10 +69,10 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn spring-boot:start" />
-      <command value="mvn spring-boot:run" />
       <command value="mvn spring-boot:test-run" />
       <command value="mvn jacoco:report" />
       <command value="mvn test" />
+      <command value="mvn spring-boot:run" />
     </option>
   </component>
   <component name="RunManager" selected="JUnit.RecipeControllerTest">
