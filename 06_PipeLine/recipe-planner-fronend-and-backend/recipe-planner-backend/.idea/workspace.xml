@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01bd4868-a022-40c8-8927-00a3980d6dd0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../.github/workflows/test.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.github/workflows/test.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2b1uEqns5M6yfLRnK8kG1bV5e9v" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.RecipePlannerApplication.executor": "Run",
+    "JUnit.RecipeControllerTest.addRecipe.executor": "Run",
+    "JUnit.RecipeControllerTest.executor": "Run",
+    "JUnit.RecipeControllerTest.getRecipe.executor": "Run",
+    "JUnit.RecipeControllerTest.getRecipes.executor": "Run",
+    "Maven.recipe-planner-backend [jacoco:report].executor": "Run",
+    "Maven.recipe-planner-backend [org.jacoco:jacoco-maven-plugin:0.8.11:check].executor": "Run",
+    "Maven.recipe-planner-backend [org.jacoco:jacoco-maven-plugin:0.8.11:prepare-agent].executor": "Run",
+    "Maven.recipe-planner-backend [org.jacoco:jacoco-maven-plugin:0.8.11:report].executor": "Run",
+    "Maven.recipe-planner-backend [spring-boot:run].executor": "Run",
+    "Maven.recipe-planner-backend [spring-boot:start].executor": "Run",
+    "Maven.recipe-planner-backend [spring-boot:test-run].executor": "Run",
+    "Maven.recipe-planner-backend [test].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "test",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ch.tbz.recipe.planner.mapper" />
+      <recent name="ch.tbz.recipe.planner.controller" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn spring-boot:start" />
+      <command value="mvn spring-boot:run" />
+      <command value="mvn spring-boot:test-run" />
+      <command value="mvn jacoco:report" />
+      <command value="mvn test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.RecipeControllerTest">
+    <configuration name="RecipePlannerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ch.tbz.recipe.planner.RecipePlannerApplication" />
+      <module name="recipe-planner-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.tbz.recipe.planner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecipeControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipe-planner-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.tbz.recipe.planner.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.tbz.recipe.planner.controller" />
+      <option name="MAIN_CLASS_NAME" value="ch.tbz.recipe.planner.controller.RecipeControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecipeControllerTest.addRecipe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipe-planner-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.tbz.recipe.planner.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.tbz.recipe.planner.controller" />
+      <option name="MAIN_CLASS_NAME" value="ch.tbz.recipe.planner.controller.RecipeControllerTest" />
+      <option name="METHOD_NAME" value="addRecipe" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecipeControllerTest.getRecipe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipe-planner-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.tbz.recipe.planner.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.tbz.recipe.planner.controller" />
+      <option name="MAIN_CLASS_NAME" value="ch.tbz.recipe.planner.controller.RecipeControllerTest" />
+      <option name="METHOD_NAME" value="getRecipe" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecipeControllerTest.getRecipes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="recipe-planner-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ch.tbz.recipe.planner.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ch.tbz.recipe.planner.controller" />
+      <option name="MAIN_CLASS_NAME" value="ch.tbz.recipe.planner.controller.RecipeControllerTest" />
+      <option name="METHOD_NAME" value="getRecipes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RecipeControllerTest" />
+        <item itemvalue="JUnit.RecipeControllerTest.addRecipe" />
+        <item itemvalue="JUnit.RecipeControllerTest.getRecipe" />
+        <item itemvalue="JUnit.RecipeControllerTest.getRecipes" />
+        <item itemvalue="Application.RecipePlannerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-8336523bb0d9-93b19daf" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01bd4868-a022-40c8-8927-00a3980d6dd0" name="Changes" comment="" />
+      <created>1705394798941</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1705394798941</updated>
+    </task>
+    <servers />
+  </component>
+</project>
