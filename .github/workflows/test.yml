@@ -19,11 +19,13 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
+      - name : ls
+        run: ls
+
       - uses: JarvusInnovations/background-action@v1
         name: Start Backend Server
         with:
           run: |
-            ls &
             cd ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend &
             mvn spring-boot:run
 
