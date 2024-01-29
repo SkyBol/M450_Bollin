@@ -21,9 +21,12 @@ jobs:
 
       - uses: JarvusInnovations/background-action@v1
         name: Start Backend Server
-        working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
+        working-directory: 
         with:
-          run: mvn spring-boot:run
+          run: |
+            cd ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend &
+            mvn spring-boot:run
+
           wait-on: http://localhost:8080
           tail: true
           wait-for: 5m
