@@ -32,7 +32,6 @@ jobs:
             mvn spring-boot:run
           wait-on: http://localhost:8080
           tail: true
-          wait-for: 5m
           working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
 
       - name: Testing with Rest Assured
