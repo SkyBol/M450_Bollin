@@ -23,6 +23,7 @@ jobs:
         name: Start Backend Server
         with:
           run: |
+            ls &
             cd ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend &
             mvn spring-boot:run
 
