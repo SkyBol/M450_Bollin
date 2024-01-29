@@ -26,6 +26,7 @@ jobs:
         name: Start Backend Server
         with:
           run: |
+            cd ../06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend &
             mvn spring-boot:run
           wait-on: http://localhost:8080
           tail: true
