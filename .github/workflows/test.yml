@@ -23,7 +23,7 @@ jobs:
         name: Start Backend Server
         with:
           run: |
-            mvn install &
+            mvn compile &
             mvn spring-boot:run
           wait-on: http://localhost:8080
           tail: true
