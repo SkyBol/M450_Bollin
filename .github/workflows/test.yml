@@ -13,12 +13,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Change Directory to Backend
-        run: cd 06_PipeLine
-
-      - name: pwd
-        run: ls
-
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
@@ -26,9 +20,11 @@ jobs:
           distribution: 'adopt'
 
       - name: Build with Maven
+        working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
         run: mvn -B clean verify
 
       - name: Upload Surefire Reports
+        working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
         uses: actions/upload-artifact@v2
         with:
           name: surefire-reports
