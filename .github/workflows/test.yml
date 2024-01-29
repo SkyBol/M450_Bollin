@@ -19,6 +19,10 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
+      - name: Print directory content
+        working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
+        run: ls
+
       - name: Build with Maven
         working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
         run: mvn -B clean verify
