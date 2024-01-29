@@ -16,6 +16,9 @@ jobs:
       - name: Change Directory to Backend
         run: cd 06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
 
+      - name: pwd
+        run: pwd
+
       - name: Set up JDK
         uses: actions/setup-java@v2
         with:
