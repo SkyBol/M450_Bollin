@@ -19,7 +19,12 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
 
-      - name: Build with Maven
+      - name: Start Backend Server
+        working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
+        run: mvn spring-boot:run
+        background: true
+
+      - name: Testing with Rest Assured
         working-directory: ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend
         run: mvn test
 
