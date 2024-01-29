@@ -21,7 +21,6 @@ jobs:
 
       - uses: JarvusInnovations/background-action@v1
         name: Start Backend Server
-        working-directory: 
         with:
           run: |
             cd ./06_PipeLine/recipe-planner-fronend-and-backend/recipe-planner-backend &
